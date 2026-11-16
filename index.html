@@ -4,12 +4,12 @@
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Firma Centinela FEP vs. MDD | María Victoria Venegas Gutiérrez — UNAB</title>
 <meta name="description" content="Validación transcriptómica transdiagnóstica en sangre periférica (PBMCs) para diferenciar Primer Episodio Psicótico (FEP) y Depresión Mayor (MDD). Ingeniería en Biotecnología, Universidad Andrés Bello.">
-<meta name="keywords" content="María Victoria Venegas Gutiérrez, psiquiatría transdiagnóstica, FEP, MDD, biomarcadores transcriptómicos, PRJNA1420242, UNAB, Universidad Andrés Bello">
+<meta name="keywords" content="María Victoria Venegas Gutiérrez, psiquiatría transdiagnóstica, FEP, MDD, genes candidatos transcriptómicos, PRJNA1420242, UNAB, Instituto Psiquiátrico Dr. José Horwitz Barak">
 <meta name="author" content="María Victoria Venegas Gutiérrez">
 <meta property="og:title" content="Psiquiatría Transdiagnóstica: Firma Centinela FEP vs. MDD">
-<meta property="og:description" content="Validación bioinformática externa sobre la cohorte PRJNA1420242 (N=156) — Universidad Andrés Bello (UNAB).">
+<meta property="og:description" content="Validación bioinformática externa sobre la cohorte PRJNA1420242 (N=156) — UNAB & Instituto Psiquiátrico Dr. José Horwitz Barak.">
 <meta property="og:url" content="https://ph8bias.github.io/tesispsiquiatria-transdiagnostica/">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"ScholarlyArticle","name":"Validación transcriptómica transdiagnóstica de firma centinela en sangre periférica (FEP vs. MDD)","author":{"@type":"Person","name":"María Victoria Venegas Gutiérrez"},"affiliation":{"@type":"Organization","name":"Universidad Andrés Bello"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ScholarlyArticle","name":"Evaluación transcriptómica transdiagnóstica de un panel candidato a priori en sangre periférica (FEP vs. MDD)","author":{"@type":"Person","name":"María Victoria Venegas Gutiérrez"},"affiliation":{"@type":"Organization","name":"Universidad Andrés Bello"}}</script>
 <style>
 :root{--bg:#FDF8F9;--card:#FFFFFF;--blush:#F9EBEF;--rose:#C86D84;--berry:#9E3B5A;--plum:#2D1620;--muted:#6E4D59;--border:#F0D5DD}
 *{box-sizing:border-box;margin:0;padding:0}body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--plum);line-height:1.6}
@@ -37,15 +37,15 @@ footer{text-align:center;padding:2rem 1rem;color:var(--muted);font-size:.85rem}
 <span class="badge">Biotecnología & Psiquiatría Molecular</span>
 <h1>Validación Transcriptómica Transdiagnóstica de Firma Centinela en Sangre Periférica (FEP vs. MDD)</h1>
 <p class="sub">Diferenciación molecular temprana entre Primer Episodio Psicótico y Trastorno Depresivo Mayor en PBMCs (cohorte PRJNA1420242, N=156).</p>
-<p class="meta">María Victoria Venegas Gutiérrez · Ingeniería en Biotecnología (UNAB)</p>
+<p class="meta">María Victoria Venegas Gutiérrez · Ingeniería en Biotecnología (UNAB) · Instituto Psiquiátrico Dr. José Horwitz Barak</p>
 </header>
 <main>
 <section class="card"><h2>1. Resumen & Arquitectura Bioinformática</h2>
-<p>Evaluación de una <strong>firma transcriptómica centinela</strong> en sangre periférica (PBMCs) sobre ejes neuroinmunes, respuesta al estrés (<em>FKBP5, NR3C1</em>), señalización monoaminérgica y plasticidad sináptica (<em>BDNF</em>), validada con <strong>Kallisto</strong> y análisis diferencial.</p>
+<p>Evaluación exploratoria de un <strong>panel candidato <em>a priori</em></strong> en sangre periférica (PBMCs) sobre ejes neuroinmunes, respuesta al estrés (<em>FKBP5, NR3C1</em>), señalización monoaminérgica y plasticidad sináptica (<em>BDNF</em>). La inferencia diferencial se basa en abundancias de <strong>Kallisto</strong> importadas mediante <strong>tximport</strong> (conteos estimados para <strong>DESeq2</strong>, reservando TPM para visualización). Cualquier afirmación de clasificación temprana queda supeditada a modelos predictivos con validación cruzada rigurosa, control de sobreajuste y evaluación en cohortes independientes.</p>
 <div class="grid">
 <div class="stat"><strong>N = 156</strong><span>Cohorte Externa (PRJNA1420242)</span></div>
 <div class="stat"><strong>PBMCs</strong><span>Biomarcador periférico</span></div>
-<div class="stat"><strong>Kallisto + DESeq2</strong><span>TPM y expresión diferencial</span></div>
+<div class="stat"><strong>Kallisto → tximport → DESeq2</strong><span>Conteos estimados (TPM solo visual)</span></div>
 <div class="stat"><strong>FEP vs. MDD</strong><span>Clasificación temprana</span></div>
 </div></section>
 <section class="card"><h2>2. Ejes Moleculares de la Firma Centinela</h2>
@@ -60,5 +60,5 @@ footer{text-align:center;padding:2rem 1rem;color:var(--muted);font-size:.85rem}
 <p id="msg" style="color:var(--berry);font-size:.85rem;margin-top:.5rem;"></p>
 </section></main>
 <footer>© 2026 María Victoria Venegas Gutiérrez · Universidad Andrés Bello · Santiago, Chile</footer>
-<script>function copiarCita(){navigator.clipboard.writeText("Venegas Gutiérrez, M. V. (2026). Validación transcriptómica transdiagnóstica de firma centinela en sangre periférica (FEP vs. MDD). Universidad Andrés Bello.");document.getElementById("msg").innerText="✔ Citación copiada al portapapeles.";}</script>
+<script>function copiarCita(){navigator.clipboard.writeText("Venegas Gutiérrez, M. V. (2026). Evaluación transcriptómica transdiagnóstica de un panel candidato a priori en sangre periférica (FEP vs. MDD). Universidad Andrés Bello.");document.getElementById("msg").innerText="✔ Citación copiada al portapapeles.";}</script>
 </body></html>
